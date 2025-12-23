@@ -17,7 +17,7 @@ function checkEvenOdd(b) {
 
 console.log(checkEvenOdd(11));
 
-// 2. Check if anumber is positive, negative, or zero.
+// 2. Check if a number is positive, negative, or zero.
 let num2 = 16;
 if(num2 > 0) {
     console.log("Positive number");
@@ -89,8 +89,8 @@ console.log(Math.min(c, d));
 // Using a Function.
 
 function findLargest(a, b, c) {
-    if (a >= b && a >= c) a + " is the largest number";
-    if (b >= a && b >= a) b + " is the largest number";
+    if (a >= b && a >= c) return a + " is the largest number";
+    if (b >= a && b >= a) return b + " is the largest number";
     return c + " is the largest number";
 }
 
@@ -100,3 +100,41 @@ console.log(findLargest(1, 43, 21));
 
 let f = 43, g = 32, h = 54;
 console.log(Math.min(f, g, h));
+
+//Ques. 5- Check if a number is prime.
+
+let num1 = 19;
+let isPrime = true;
+
+if (num1 <= 1) {
+ } else {
+for (let i = 2; i < num1; i++) {
+    if (num1 % i === 0) {
+        isPrime = false;
+        brack;
+    }
+}
+ }
+ console.log(isPrime ? "Prime" : "Non-Prime");
+
+ //Ques. 6- Print all prime numbers between 1 to 100;
+
+ let num3 = 100;
+
+     //Outer loop: Numbers from 2 to 100;
+ for (let i = 2; i < num3; i++) {
+    let isPrime = true;
+
+// Inner loop: Check divisibility;
+    for(let j = 2; j < i; j++){
+        if(i % j === 0) {
+         isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) {
+        console.log(i);
+
+    }
+ }
+
