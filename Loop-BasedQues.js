@@ -8,7 +8,7 @@ if (num1 <= 1) {
 for (let i = 2; i < num1; i++) {
     if (num1 % i === 0) {
         isPrime = false;
-        brack;
+        break;
     }
 }
  }
@@ -138,3 +138,22 @@ for (let i = 1; i <= 10; i++) {
      console.log(`${multi} x ${i} = ${multi * i}`);
 }
 
+//Ques. 13. Print numbers from 1 to 100;
+
+let number = 47;
+
+for (let i = 1; i <= number; i++) {
+    console.log(i);
+}
+
+//Ques. 14. Print this pattern:
+
+let numbers = 5;
+
+for(let i = 1; i <= numbers; i++){
+    numbers = "";
+    for(let j= 1; j <= i; j++){
+        numbers+= "5";
+    }
+    console.log(i);
+}
